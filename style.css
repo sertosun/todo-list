@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Kumbh+Sans:wght@400;700&family=Open+Sans&family=Overpass:wght@400;700&family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-width: 100vh;
+}
+
+.todo_header {
+  padding: 2rem 3rem;
+  text-align: center;
+  background-color: rgb(79, 0, 0);
+  color: white;
+}
+
+.title {
+  font-family: "Bangers", cursive;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.input_container {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+}
+
+.myTodo,
+.add_todo {
+  padding: 0.6rem 2rem;
+  border: none;
+  outline: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.4rem;
+}
+
+.myTodo {
+  flex: 1 0 200px;
+  padding-left: 0.4rem;
+}
+
+.add_todo {
+  background-color: #4f6e11;
+  color: white;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+  position: relative;
+  padding: 1rem 3rem 1rem 1rem;
+  user-select: none;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid black;
+  background-color: rgb(192, 192, 192);
+  transition: all 200ms;
+}
+
+ul li:nth-child(even) {
+  background-color: rgb(73, 73, 73);
+  color: white;
+}
+
+ul li:hover {
+  background-color: white;
+  color: black;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+}
+
+.closeButton {
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+}
